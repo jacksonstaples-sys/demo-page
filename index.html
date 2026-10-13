@@ -5,64 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Webpage</title>
     <style>
+        /* Base page styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f4f9;
             color: #333333;
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
         }
 
+        /* Central content card */
+        main {
+            background-color: #ffffff;
+            max-width: 550px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Heading styling */
         h1 {
             color: #2c3e50;
             text-align: center;
+            font-size: 1.8rem;
+            margin-top: 0;
             border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
+            padding-bottom: 12px;
         }
 
+        /* Image styling with hover transition */
         .page-image {
             width: 100%;
             max-width: 400px;
             height: auto;
             display: block;
-            margin: 20px auto;
+            margin: 25px auto;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+            transition: transform 0.3s ease;
         }
 
+        .page-image:hover {
+            transform: scale(1.02);
+        }
+
+        /* Paragraph text */
         p {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            line-height: 1.6;
+            color: #555555;
+            font-size: 1rem;
         }
 
-        /* Styling for links */
-        a {
-            color: #3498db;
+        /* Button-style link */
+        .btn-link {
+            display: inline-block;
+            background-color: #3498db;
+            color: #ffffff;
             text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
             font-weight: bold;
+            margin-top: 10px;
+            transition: background-color 0.2s ease;
         }
 
-        a:hover {
-            text-decoration: underline;
-            color: #2980b9;
+        .btn-link:hover {
+            background-color: #2980b9;
         }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to Web Development Class</h1>
+    <main>
+        <h1>Welcome to Web Development Class</h1>
 
-    <!-- Image element -->
-    <img src="Golfcourseshot.jpg" alt="Golf course shot" class="page-image">
+        <img src="Golfcourseshot.jpg" alt="A wide green fairway on a golf course under a cloudy sky" class="page-image">
 
-    <p>This is my very first webpage built for class using GitHub Pages! I am learning how HTML structures content on the web and how to publish updates directly through GitHub.</p>
+        <p>This is my very first webpage built for class using GitHub Pages! I am learning how HTML structures content on the web and how to publish updates directly through GitHub.</p>
 
-    <!-- Clickable Link Paragraph -->
-    <p>Check out one of my favorite websites: <a href="https://www.pgatour.com" target="_blank" rel="noopener noreferrer">Visit PGA Tour</a></p>
+        <p>Check out one of my favorite websites:</p>
+        <a href="https://www.pgatour.com" target="_blank" rel="noopener noreferrer" class="btn-link">Visit PGA Tour &rarr;</a>
+    </main>
 
 </body>
 </html>
