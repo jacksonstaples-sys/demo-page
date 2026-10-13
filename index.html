@@ -22,14 +22,13 @@
             padding-bottom: 10px;
         }
 
-        /* Image styling to fit nicely */
         .page-image {
-            width: 100%;          /* Fits inside its container */
-            max-width: 400px;     /* Prevents image from becoming overly large */
-            height: auto;         /* Preserves aspect ratio so image doesn't stretch */
+            width: 100%;
+            max-width: 400px;
+            height: auto;
             display: block;
-            margin: 20px auto;    /* Centers the image on the page */
-            border-radius: 8px;   /* Rounds image corners */
+            margin: 20px auto;
+            border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
         }
 
@@ -38,6 +37,18 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for links */
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #2980b9;
         }
     </style>
 </head>
@@ -49,6 +60,9 @@
     <img src="Golfcourseshot.jpg" alt="Golf course shot" class="page-image">
 
     <p>This is my very first webpage built for class using GitHub Pages! I am learning how HTML structures content on the web and how to publish updates directly through GitHub.</p>
+
+    <!-- Clickable Link Paragraph -->
+    <p>Check out one of my favorite websites: <a href="https://www.pgatour.com" target="_blank" rel="noopener noreferrer">Visit PGA Tour</a></p>
 
 </body>
 </html>
