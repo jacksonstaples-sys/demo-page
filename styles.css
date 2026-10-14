@@ -12,7 +12,7 @@ body {
 /* Central card container expanded for a wide desktop layout */
 main {
     background-color: #ffffff;
-    max-width: 950px; /* Widened from 550px to 950px */
+    max-width: 950px;
     width: 100%;
     padding: 45px 50px;
     border-radius: 12px;
@@ -20,7 +20,12 @@ main {
     box-shadow: 0 6px 25px rgba(11, 70, 38, 0.12);
 }
 
-/* Main Title - Larger font and Augusta Yellow underline */
+/* Classic Majors Serif Font Stack for Headings */
+h1, h2, h3 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+/* Main Title - Augusta Yellow Underline */
 h1 {
     color: #0b4626;
     text-align: center;
@@ -40,33 +45,79 @@ h2 {
     padding-bottom: 8px;
 }
 
-/* Subheadings with Azalea Pink accent mark */
+/* Subheadings with Azalea Pink Accent Mark */
 h3 {
     color: #0b4626;
     font-size: 1.25rem;
-    margin-top: 25px;
+    margin-top: 0;
     margin-bottom: 10px;
     border-left: 5px solid #d81b60; /* Azalea Pink indicator */
     padding-left: 10px;
 }
 
-/* Images resized to fill the wide layout */
+/* Images with Polished Card Shadows & Hover Depth */
 .page-image {
     width: 100%;
-    max-width: 850px; /* Expands images across the card */
+    max-width: 850px;
     height: auto;
     display: block;
-    margin: 24px auto;
+    margin: 20px auto;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(11, 70, 38, 0.15);
-    transition: transform 0.3s ease;
+    box-shadow: 0 6px 18px rgba(11, 70, 38, 0.14);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .page-image:hover {
-    transform: scale(1.01);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(11, 70, 38, 0.22);
 }
 
-/* Text and lists formatted for comfortable reading on wide screens */
+/* Side-by-Side Course Spotlight Grid */
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.spotlight-card {
+    background-color: #fafcfb;
+    border: 1px solid #e2e8e4;
+    border-radius: 10px;
+    padding: 22px;
+    box-shadow: 0 4px 12px rgba(11, 70, 38, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.spotlight-card .page-image {
+    margin: 12px 0;
+}
+
+/* Difficulty Badge Styling */
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.82rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 6px;
+}
+
+.badge-hard {
+    background-color: #d81b60; /* Azalea Pink */
+}
+
+.badge-very-hard {
+    background-color: #8b0000; /* Dark Crimson */
+}
+
+.badge-medium {
+    background-color: #0b4626; /* Masters Green */
+}
+
+/* Body Text & Unordered List */
 p {
     line-height: 1.7;
     color: #333333;
@@ -74,28 +125,29 @@ p {
 }
 
 ul {
-    padding-left: 25px;
-    line-height: 1.7;
+    padding-left: 0;
+    line-height: 1.8;
     color: #333333;
     font-size: 1.08rem;
+    list-style: none;
 }
 
 li {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
-/* Button links arranged side-by-side in a horizontal row */
+/* Horizontal Link Buttons */
 .btn-container {
     display: flex;
-    flex-direction: row; /* Places buttons next to each other */
-    flex-wrap: wrap; /* Wraps cleanly on mobile screens */
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 15px;
     margin-top: 20px;
     justify-content: center;
 }
 
 .btn-link {
-    flex: 1 1 220px; /* Allows buttons to share width evenly */
+    flex: 1 1 220px;
     display: inline-block;
     background-color: #0b4626; /* Masters Green */
     color: #ffffff;
@@ -110,8 +162,8 @@ li {
 }
 
 .btn-link:hover {
-    background-color: #ffc72c; /* Turns Augusta Yellow on hover */
-    color: #0b4626; /* Text turns Masters Green */
+    background-color: #ffc72c; /* Augusta Yellow */
+    color: #0b4626;
     border-color: #ffc72c;
     transform: translateY(-3px);
 }
