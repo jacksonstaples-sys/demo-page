@@ -17,20 +17,26 @@
 
         <h2>Featured Courses & Difficulty Ratings</h2> <!-- Secondary heading tag for the course difficulty list section -->
         <ul> <!-- Opens an unordered list element for course difficulty bullets -->
-            <li><strong>Pebble Beach Golf Links:</strong> Hard — Famous for coastal ocean winds, narrow fairways, and small greens.</li> <!-- List item element describing Pebble Beach Golf Links difficulty -->
-            <li><strong>Augusta National:</strong> Very Hard — Known for fast undulating greens and steep elevation changes.</li> <!-- List item element describing Augusta National difficulty -->
-            <li><strong>St Andrews (Old Course):</strong> Medium/Hard — Classic Scottish links golf featuring massive pot bunkers.</li> <!-- List item element describing St Andrews Old Course difficulty -->
+            <li><span class="badge badge-hard">Hard</span> <strong>Pebble Beach Golf Links:</strong> Famous for coastal ocean winds, narrow fairways, and small greens.</li> <!-- List item element describing Pebble Beach Golf Links with badge -->
+            <li><span class="badge badge-very-hard">Very Hard</span> <strong>Augusta National:</strong> Known for fast undulating greens and steep elevation changes.</li> <!-- List item element describing Augusta National with badge -->
+            <li><span class="badge badge-medium">Medium / Hard</span> <strong>St Andrews (Old Course):</strong> Classic Scottish links golf featuring massive pot bunkers.</li> <!-- List item element describing St Andrews Old Course with badge -->
         </ul> <!-- Closes the unordered list element -->
 
         <h2>Course Spotlights</h2> <!-- Secondary heading tag for detailed course spotlight section -->
 
-        <h3>Augusta National Golf Club</h3> <!-- Subheading tag for Augusta National spotlight -->
-        <img src="augusta.jpg" alt="Azalea flowers lining a green fairway at Augusta National Golf Club" class="page-image"> <!-- Image element showing Augusta National Golf Club -->
-        <p>Augusta National is famous for its lush, immaculate landscape, dramatic elevation changes, and extremely fast greens that test the world's top golfers during The Masters.</p> <!-- Paragraph element describing Augusta National details -->
+        <div class="spotlight-grid"> <!-- Opens a container div for the side-by-side course spotlight cards -->
+            <div class="spotlight-card"> <!-- Opens first card container for Augusta National -->
+                <h3>Augusta National Golf Club</h3> <!-- Subheading tag for Augusta National spotlight -->
+                <img src="augusta.jpg" alt="Azalea flowers lining a green fairway at Augusta National Golf Club" class="page-image"> <!-- Image element showing Augusta National Golf Club -->
+                <p>Augusta National is famous for its lush, immaculate landscape, dramatic elevation changes, and extremely fast greens that test the world's top golfers during The Masters.</p> <!-- Paragraph element describing Augusta National details -->
+            </div> <!-- Closes first card container -->
 
-        <h3>St Andrews Old Course</h3> <!-- Subheading tag for St Andrews spotlight -->
-        <img src="standrews.jpg" alt="The iconic stone Swilcan Bridge crossing a creek at St Andrews Old Course" class="page-image"> <!-- Image element showing St Andrews Old Course -->
-        <p>Known worldwide as the 'Home of Golf', St Andrews features double greens, deep pot bunkers, and unpredictable Scottish coastal winds that make every round challenging.</p> <!-- Paragraph element describing St Andrews Old Course details -->
+            <div class="spotlight-card"> <!-- Opens second card container for St Andrews -->
+                <h3>St Andrews Old Course</h3> <!-- Subheading tag for St Andrews spotlight -->
+                <img src="standrews.jpg" alt="The iconic stone Swilcan Bridge crossing a creek at St Andrews Old Course" class="page-image"> <!-- Image element showing St Andrews Old Course -->
+                <p>Known worldwide as the 'Home of Golf', St Andrews features double greens, deep pot bunkers, and unpredictable Scottish coastal winds that make every round challenging.</p> <!-- Paragraph element describing St Andrews Old Course details -->
+            </div> <!-- Closes second card container -->
+        </div> <!-- Closes the spotlight grid container div -->
 
         <h2>Explore More Golf Resources</h2> <!-- Secondary heading tag for external golf links section -->
         <p>Check out these official sites to explore scores, tournament schedules, and course details:</p> <!-- Paragraph element introducing external golf links -->
