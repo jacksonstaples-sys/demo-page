@@ -80,15 +80,22 @@
             margin-bottom: 12px;
         }
 
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
         .btn-link {
             display: inline-block;
             background-color: #3498db;
             color: #ffffff;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 10px 18px;
             border-radius: 6px;
             font-weight: bold;
-            margin-top: 10px;
+            text-align: center;
             transition: background-color 0.2s ease;
         }
 
@@ -123,9 +130,13 @@
         <img src="standrews.jpg" alt="The iconic stone Swilcan Bridge crossing a creek at St Andrews Old Course" class="page-image"> <!-- Third image showing St Andrews Old Course -->
         <p>Known worldwide as the 'Home of Golf', St Andrews features double greens, deep pot bunkers, and unpredictable Scottish coastal winds that make every round challenging.</p> <!-- Paragraph describing St Andrews -->
 
-        <h2>PGA Tour Coverage</h2> <!-- Secondary section heading for external link section -->
-        <p>Want to see how professional golfers handle these tough courses?</p> <!-- Introductory text for the external link -->
-        <a href="https://www.pgatour.com" target="_blank" rel="noopener noreferrer" class="btn-link">Visit PGA Tour &rarr;</a> <!-- Styled button link opening PGA Tour website in a new tab -->
+        <h2>Explore More Golf Resources</h2> <!-- Secondary section heading for external links section -->
+        <p>Check out these official sites to explore scores, tournament schedules, and course details:</p> <!-- Introductory text for external links -->
+        <div class="btn-container"> <!-- Container box to group action links neatly -->
+            <a href="https://www.pgatour.com" target="_blank" rel="noopener noreferrer" class="btn-link">Official PGA Tour Website &rarr;</a> <!-- First link to PGA Tour website -->
+            <a href="https://www.masters.com" target="_blank" rel="noopener noreferrer" class="btn-link">Official Masters Tournament Website &rarr;</a> <!-- Second link to The Masters website -->
+            <a href="https://www.standrews.com" target="_blank" rel="noopener noreferrer" class="btn-link">Official St Andrews Links Website &rarr;</a> <!-- Third link to St Andrews Links website -->
+        </div> <!-- Closes link button container -->
     </main> <!-- Closes the main content container -->
 
 </body> <!-- Closes the body section -->
