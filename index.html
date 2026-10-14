@@ -3,7 +3,7 @@
 <head> <!-- Opens the head section for page metadata and styling -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title> <!-- Defines the title displayed on the browser tab -->
+    <title>Golf Course Difficulty Guide</title> <!-- Defines the title displayed on the browser tab -->
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -63,6 +63,16 @@
             font-size: 1rem;
         }
 
+        ul {
+            padding-left: 20px;
+            line-height: 1.6;
+            color: #555555;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
         .btn-link {
             display: inline-block;
             background-color: #3498db;
@@ -83,17 +93,21 @@
 <body> <!-- Opens the body section where all visible webpage content lives -->
 
     <main> <!-- Opens the main content container for the webpage -->
-        <h1>Welcome to Web Development Class</h1> <!-- Creates the primary heading text for the webpage -->
+        <h1>Top Golf Courses & Difficulty Guide</h1> <!-- Creates the primary heading for the golf guide site -->
 
         <img src="Golfcourseshot.jpg" alt="A wide green fairway on a golf course under a cloudy sky" class="page-image"> <!-- Displays the image file with accessible description text and styling class -->
 
-        <p>This is my very first webpage built for class using GitHub Pages! I am learning how HTML structures content on the web and how to publish updates directly through GitHub.</p> <!-- Creates a paragraph describing the project -->
+        <p>Welcome to my golf course guide! Here you will find information about famous golf courses around the world, their difficulty levels, and what makes each layout unique.</p> <!-- Creates an introductory paragraph explaining the website focus -->
 
-        <h2>My Hobbies & Interests</h2> <!-- Creates a secondary section heading for hobbies -->
-        <p>When I am not practicing coding, I love playing golf and spending time outdoors. Learning web design is an exciting new hobby that lets me build cool projects online!</p> <!-- Creates a paragraph explaining personal hobbies -->
+        <h2>Featured Courses & Difficulty Ratings</h2> <!-- Creates a secondary section heading for the course list -->
+        <ul> <!-- Opens an unordered bulleted list -->
+            <li><strong>Pebble Beach Golf Links:</strong> Hard — Famous for coastal ocean winds, narrow fairways, and small greens.</li> <!-- First golf course item -->
+            <li><strong>Augusta National:</strong> Very Hard — Known for fast undulating greens and steep elevation changes.</li> <!-- Second golf course item -->
+            <li><strong>St Andrews (Old Course):</strong> Medium/Hard — Classic Scottish links golf featuring massive pot bunkers.</li> <!-- Third golf course item -->
+        </ul> <!-- Closes the unordered bulleted list -->
 
-        <h2>Favorite Websites</h2> <!-- Creates a secondary section heading for links -->
-        <p>Check out one of my favorite websites:</p> <!-- Creates introductory text for the external link -->
+        <h2>PGA Tour Coverage</h2> <!-- Creates a secondary section heading for links -->
+        <p>Want to see how professional golfers handle these tough courses?</p> <!-- Creates introductory text for the external link -->
         <a href="https://www.pgatour.com" target="_blank" rel="noopener noreferrer" class="btn-link">Visit PGA Tour &rarr;</a> <!-- Creates a styled button link that opens an external website in a new browser tab -->
     </main> <!-- Closes the main content container -->
 
