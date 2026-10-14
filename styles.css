@@ -1,7 +1,7 @@
-/* Body & Page Background */
+/* Page background with a clean green tint */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f2f5f3;
+    background-color: #f4f7f5;
     color: #2c3e50;
     margin: 0;
     padding: 40px 20px;
@@ -9,43 +9,48 @@ body {
     justify-content: center;
 }
 
-/* Central Page Container Card */
+/* Central card container styled like a clubhouse leaderboard */
 main {
     background-color: #ffffff;
     max-width: 550px;
     width: 100%;
     padding: 32px;
     border-radius: 12px;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    border-top: 6px solid #0b4626; /* Masters Green top border */
+    box-shadow: 0 4px 20px rgba(11, 70, 38, 0.1);
 }
 
-/* Headings */
+/* Main Title - Masters Green with Augusta Yellow bottom accent */
 h1 {
-    color: #1b4d3e; /* Deep green */
+    color: #0b4626;
     text-align: center;
     font-size: 1.8rem;
     margin-top: 0;
-    border-bottom: 3px solid #2e7d32;
+    border-bottom: 3px solid #ffc72c; /* Augusta Yellow line */
     padding-bottom: 12px;
 }
 
+/* Section Headings */
 h2 {
-    color: #1b4d3e;
+    color: #0b4626;
     font-size: 1.3rem;
     margin-top: 28px;
     margin-bottom: 12px;
-    border-bottom: 2px solid #e0e0e0;
+    border-bottom: 2px solid #e2e8e4;
     padding-bottom: 6px;
 }
 
+/* Subheadings with Azalea Pink touch */
 h3 {
-    color: #2e7d32;
+    color: #0b4626;
     font-size: 1.1rem;
     margin-top: 20px;
     margin-bottom: 6px;
+    border-left: 4px solid #d81b60; /* Azalea Pink indicator */
+    padding-left: 8px;
 }
 
-/* Images */
+/* Images with subtle green shadow */
 .page-image {
     width: 100%;
     max-width: 450px;
@@ -53,7 +58,7 @@ h3 {
     display: block;
     margin: 18px auto;
     border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 12px rgba(11, 70, 38, 0.15);
     transition: transform 0.3s ease;
 }
 
@@ -61,24 +66,24 @@ h3 {
     transform: scale(1.02);
 }
 
-/* Body Text & Lists */
+/* Paragraphs & Lists */
 p {
     line-height: 1.6;
-    color: #444444;
+    color: #333333;
     font-size: 1rem;
 }
 
 ul {
     padding-left: 20px;
     line-height: 1.6;
-    color: #444444;
+    color: #333333;
 }
 
 li {
     margin-bottom: 10px;
 }
 
-/* Button Links */
+/* Button Links styled in Masters Green & Augusta Yellow */
 .btn-container {
     display: flex;
     flex-direction: column;
@@ -88,17 +93,20 @@ li {
 
 .btn-link {
     display: inline-block;
-    background-color: #2e7d32; /* Golf green */
+    background-color: #0b4626; /* Masters Green */
     color: #ffffff;
     text-decoration: none;
     padding: 12px 18px;
     border-radius: 6px;
     font-weight: bold;
     text-align: center;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    border: 2px solid #0b4626;
+    transition: all 0.2s ease;
 }
 
 .btn-link:hover {
-    background-color: #1b4d3e;
+    background-color: #ffc72c; /* Turns Augusta Yellow on hover */
+    color: #0b4626; /* Text turns Masters Green */
+    border-color: #ffc72c;
     transform: translateY(-2px);
 }
